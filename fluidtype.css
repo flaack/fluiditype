@@ -24,20 +24,23 @@
   --font-family: "Inter", sans-serif;
 }
 
-
 html, body { 
   font-family: var(--font-family);
   word-break: break-word;
   font-variant-numeric: slashed-zero;
 }
 
+blockquote, code, mark, pre,
+p, li, b, i, strong, a,
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: var(--letter-spacing);
+  font-family: var(--font-family);
+}
 
 p, li, b, i, strong, a, mark {
   font-size: var(--font-size);
   line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   font-feature-settings: normal;
-  font-family: var(--font-family);
 }
 
 p, li , mark, a, blockquote {
@@ -47,10 +50,8 @@ p, li , mark, a, blockquote {
 code {
   font-size: calc(var(--font-size) * 1.1);
   line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing); 
   font-weight: calc(var(--font-weight)* 1.33);
   color: var(--red);
-  font-family: var(--font-family);
 }
 
 mark {
@@ -59,22 +60,18 @@ mark {
   border-radius: 2px;
   color: var(--dark-gray);
   font-size: calc(var(--font-size) * 1.1);
-  letter-spacing: var(--letter-spacing);
   font-weight: calc(var(--font-weight)* 1.33);
   word-break: break-word;
-  font-family: var(--font-family);
 }
 
 blockquote {
   background-color: var(--light-gray);
   font-size: calc(var(--font-size) * 1.1);
-  letter-spacing: var(--letter-spacing);
   border-left: 4px solid var(--dark-gray);
   border-radius: 2px;
   padding: 2.5vw;
   margin: 2%;
   font-style: italic;
-  font-family: var(--font-family);
 }
 
 a {
@@ -105,49 +102,34 @@ pre {
     white-space: pre-wrap;
     word-break: break-all;
     font-size: calc(var(--font-size) * 1.1);
-    letter-spacing: var(--letter-spacing);
-    font-family: var(--font-family);
 }
 
-h1{
+h1 {
   font-size: calc(var(--font-size) * 3);
-  letter-spacing: var(--letter-spacing);
   font-weight: calc(var(--font-weight)* 2.66);
-  font-family: var(--font-family);
 }
 
 h2 {
   font-size: calc(var(--font-size) * 2);
-  letter-spacing: var(--letter-spacing);
   font-weight: calc(var(--font-weight)* 2.33);
-  font-family: var(--font-family);
 }
 
 h3 {
   font-size: calc(var(--font-size) * 1.750);
-  letter-spacing: var(--letter-spacing);
   font-weight: calc(var(--font-weight)* 2);
-  font-family: var(--font-family);
 }
 
 h4 {
   font-size: calc(var(--font-size) * 1.5);
-  letter-spacing: var(--letter-spacing);
   font-weight: calc(var(--font-weight)* 1.667);
-  font-family: var(--font-family);
 }
 
 h5 {
   font-size: calc(var(--font-size) * 1.25);
-  letter-spacing: var(--letter-spacing);
   font-weight: calc(var(--font-weight)* 1.5);
-  font-family: var(--font-family);
 }
 
-h6{
+h6 {
   font-size: calc(var(--font-size) * 1);
-  letter-spacing: var(--letter-spacing);
   font-weight: calc(var(--font-weight)* 1);
-  font-family: var(--font-family);
 }
-
